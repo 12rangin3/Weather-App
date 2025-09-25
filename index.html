@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+
+          <!-- Search Card -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" id="ucityname" placeholder="Enter city name">
+                <button class="btn btn-primary" onclick="fetchWeather()">Search</button>
+              </div>
+              <div class="form-text">Example: Hyderabad, London, Paris</div>
+            </div>
+          </div>
+
+          <!-- Weather Card -->
+          <div class="card shadow-sm text-center">
+            <div class="card-body ">
+              <h3 class="card-title mb-3 location-name">Hyderabad</h3>
+              <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="" alt="Weather icon" class="weather-img me-3" style="width:80px; height:80px;">
+                <h2 class="temp display-5 mb-0">27 <span>&deg;C</span></h2>
+              </div>
+              <p class="text-muted cond">Clear Sky</p>
+              <hr>
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <p class="mb-1 fw-semibold">RealFeel</p>
+                  <p class="realfeel">39°C</p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p class="mb-1 fw-semibold">Wind</p>
+                  <p class="wind">NW 15 km/h</p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p class="mb-1 fw-semibold">Humidity</p>
+                  <p class="humidity">79%</p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p class="mb-1 fw-semibold">Pressure</p>
+                  <p class="pressure">1015 hPa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
