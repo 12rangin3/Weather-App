@@ -33,7 +33,7 @@ function  fetchWeather() {
             windEle.innerHTML=` <p class="wind">Wind NW ${speed} km/h</p>`
             HumidityEle.innerHTML=` <p class="Humidity">Humidity ${humidity}%</p>`
             }).catch((err)=>{
-                alert(err.name)
+               
             })
     }
 }
